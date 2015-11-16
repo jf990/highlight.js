@@ -118,3 +118,120 @@ Returns the languages names list.
 Looks up a language by name or alias.
 
 Returns the language object if found, ``undefined`` otherwise.
+
+`Common regex Constants`
+------------------------
+
+Highlight.js exports a few regular expressions as properties of the ``hljs`` object. These regex patterns are designed to handle common matching cases exposed in many common programming languages.
+
+`Common identification expressions`
+-----------------------------------
+
+``IDENT_RE``
+------------
+
+Common word identifier. Matches any word that begins with a lower or upper case letter.
+
+``UNDERSCORE_IDENT_RE``
+-----------------------
+
+Common word with underscore identifier. Matches any word that begins with a lower or upper case letter or an underscore.
+
+``NUMBER_RE``
+-------------
+
+Matches any number of consecutive digits. Number may be integer or float (has decimal point). 
+
+``C_NUMBER_RE``
+---------------
+
+Matches any valid C style number literal.
+
+``BINARY_NUMBER_RE``
+--------------------
+
+Matches any valid C style binary number literal. ex: 0b10010101
+
+``RE_STARTERS_RE``
+------------------
+
+Matches any of the common language token separators.
+
+
+### Common mode expressions
+
+``BACKSLASH_ESCAPE``
+--------------------
+
+Change mode if a backslash escape is matched.
+
+``APOS_STRING_MODE``
+---------------------
+
+Change mode when a single-quoted string is matched.
+
+``QUOTE_STRING_MODE``
+---------------------
+
+Change mode when a double-quoted string is matched.
+
+``PHRASAL_WORDS_MODE``
+---------------------
+
+Change mode when a specific word is matched.
+
+``COMMENT``
+-----------
+
+Change mode when a begin comment is matched.
+
+``C_LINE_COMMENT_MODE``
+-----------------------
+
+Change mode when a C-style single line begin comment (//) is matched.
+
+``C_BLOCK_COMMENT_MODE``
+------------------------
+
+Change mode when a C-style multi-line comment (/*..*/) is matched.
+
+``HASH_COMMENT_MODE``
+---------------------
+
+Change mode when a hash style single-line comment (#) is matched.
+
+``NUMBER_MODE``
+---------------
+
+Change mode when a number is matched.
+
+``C_NUMBER_MODE``
+-----------------
+
+Change mode when a C-language style number is matched.
+
+``BINARY_NUMBER_MODE``
+----------------------
+
+Change mode when a binary number is matched.
+
+``CSS_NUMBER_MODE``
+-------------------
+
+Change mode when a CSS number format is matched. CSS number format is a number followed by an optional units designator or %.
+
+``REGEXP_MODE``
+---------------
+
+Change mode when a regular expression string is matched.
+
+``TITLE_MODE``
+--------------
+
+Change mode when a title string is matched.
+
+``UNDERSCORE_TITLE_MODE``
+-------------------------
+
+Change mode when a title string beginning with a leading underscore is matched.
+
