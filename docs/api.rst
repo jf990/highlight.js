@@ -124,8 +124,7 @@ Returns the language object if found, ``undefined`` otherwise.
 
 Highlight.js exports a few regular expressions as properties of the ``hljs`` object. These regex patterns are designed to handle common matching cases exposed in many common programming languages.
 
-`Common identification expressions`
------------------------------------
+### Common identification expressions
 
 ``IDENT_RE``
 ------------
